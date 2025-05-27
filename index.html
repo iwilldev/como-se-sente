@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Como você está se sentindo?</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+      <form id="formulario">
+        <h1>Como você está se sentindo?</h1>
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="idade">Idade:</label>
+      <input type="number" id="idade" name="idade" required>
+
+      <label for="sentimento">Sentimento:</label>
+      <select id="sentimento" name="sentimento" required>
+        <option value="">Selecione</option>
+        <option value="tristeza">Tristeza</option>
+        <option value="raiva">Raiva</option>
+        <option value="medo">Medo</option>
+        <option value="ansiedade">Ansiedade</option>
+        <option value="cansaço">Cansaço</option>
+        <option value="frustração">Frustração</option>
+        <option value="solidão">Solidão</option>
+        <option value="vergonha">Vergonha</option>
+        <option value="confusão">Confusão</option>
+        <option value="não sei definir">Não sei definir</option>
+      </select>
+
+      <button type="submit">Ver sugestão</button>
+    </form>
+
+    <section id="sugestao"></section>
+    <button class="reset">Voltar</button>
+  </main>
+  <script src="sugestoes.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
